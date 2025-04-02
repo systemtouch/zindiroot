@@ -7,11 +7,11 @@
 
 **Architecture diagram:**
 
-
+![](media/image2.png)
 
 From the Yolo mask results, by calculate all the segment yolo predictions, I made an estimate of the boundaries between plants 1 to 7. I used these points to cut the image based on the plant number for the model to use to produce image for training and predictions.
 
-![](media/image3.png){width="6.5in" height="3.3333333333333335in"}
+![](media/image3.png)
 
 *Yolo segment boundary lines based on plant number*
 
@@ -32,7 +32,7 @@ I also added a picture of the opposing plant number to the right of the plant pi
 - 7L and 1R
 
 
-![](media/image1.png){width="2.1145833333333335in" height="4.052083333333333in"}
+![](media/image1.png)
 
   *Images used as input for the pytorch-timm model*
 
