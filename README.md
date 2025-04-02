@@ -7,7 +7,7 @@
 
 **Architecture diagram:**
 
-![](media/image2.png)
+![](media/image2.jpeg)
 
 From the Yolo mask results, by calculate all the segment yolo predictions, I made an estimate of the boundaries between plants 1 to 7. I used these points to cut the image based on the plant number for the model to use to produce image for training and predictions.
 
