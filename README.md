@@ -11,9 +11,13 @@
 
 From the Yolo mask results, by calculate all the segment yolo predictions, I made an estimate of the boundaries between plants 1 to 7. I used these points to cut the image based on the plant number for the model to use to produce image for training and predictions.
 
+
+
 ![](media/image3.png)
 
 *Yolo segment boundary lines based on plant number*
+
+
 
 To speed up the process of loading masked images, I put the masking results of all images into a dictionary and save to single pickle file.
 
@@ -32,9 +36,12 @@ I also added a picture of the opposing plant number to the right of the plant pi
 - 7L and 1R
 
 
+
 ![](media/image1.png)
 
   *Images used as input for the pytorch-timm model*
+
+  
 
   I also combined the tabular values ​​to combine with the image embed values ​​from timm,
 
@@ -60,4 +67,4 @@ I also added a picture of the opposing plant number to the right of the plant pi
 
   The metric I use is RMSE, with 5 StratifiedGroupKFold CV. From the training results, the OOF RMSE I got was 1.45120 with a public score of 1.025004044 and private score of 1.2613859
 
-  Ok, Hopefully the simple illustration above can be useful.
+  
